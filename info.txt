@@ -1,0 +1,10 @@
+font-
+
+font-family: 'Bebas Neue', cursive;
+font-family: 'Roboto', sans-serif;
+
+color-
+
+purple: #363958
+mint: #76C27E
+button color: #2A1E59
