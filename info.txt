@@ -8,3 +8,4 @@ color-
 purple: #363958
 mint: #76C27E
 button color: #2A1E59
+gray: #3E3E3E
