@@ -421,6 +421,24 @@ footer > p {
 }
 
 @media only screen and (max-width: 480px) {
+
+    .bag-icon {
+        width: 100px !important;
+    }
+
+    .review-icon {
+        width: 100px !important;
+    }
+
+
+    .btn {
+        display: none;
+    }
+
+    footer > p {
+        font-size: 0.8em;
+    }
+
     .menu-container {
         display: block;
     }
