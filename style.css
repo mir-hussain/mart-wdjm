@@ -7,15 +7,11 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: #F1F1F1;
-}
-
 .btn {
     text-decoration: none;
     color: white;
     padding: 15px 30px;
-    background-color: #2A1E59;
+    background-color: #363958;
     font-family: 'Roboto', sans-serif;
     font-size: 0.8em;
     border-radius: 10px;
@@ -31,6 +27,7 @@ nav {
     width: 80%;
     height: 100px;
     padding: 0 10%;
+    color: #363958;
 }
 
 .nav-container {
@@ -57,6 +54,11 @@ nav {
 
 .logo {
     width: 100%;
+}
+
+.nav-responsive {
+    display: none;
+    height: 50px;
 }
 
 /* First section starts from here */
@@ -141,6 +143,9 @@ nav {
     align-items: center;
     background-color: white;
     border-radius: 25px;
+    -webkit-box-shadow: 10px 10px 25px -5px rgba(0,0,0,0.29);
+    -moz-box-shadow: 10px 10px 25px -5px rgba(0,0,0,0.29);
+    box-shadow: 10px 10px 25px -5px rgba(0,0,0,0.29);
 }
 
 .sub-section-text-area {
@@ -196,6 +201,9 @@ nav {
 
 .product-card {
     background-color: white;
+    -webkit-box-shadow: 10px 10px 25px -5px rgba(0,0,0,0.29);
+    -moz-box-shadow: 10px 10px 25px -5px rgba(0,0,0,0.29);
+    box-shadow: 10px 10px 25px -5px rgba(0,0,0,0.29);
     width: 30%;
     margin: 1.5%;
     border-radius: 25px;
@@ -228,7 +236,8 @@ nav {
 .product-description > h3 {
     color: #363958;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    padding-bottom: 15px;
 }
 
 .product-description > p {
@@ -251,4 +260,184 @@ nav {
     color: #76C27E;
     font-family: 'Roboto', sans-serif;
     font-size: 2.25em;
+}
+
+/* Review section starts from here */
+
+.review-section {
+    width: 80%;
+    margin: 2% 0;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-sub-section-container {
+    width: 49%;
+}
+
+.bag-icon {
+    background-color: #F1F1F1;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.review-section-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #363958;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+}
+
+.review-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #363958;
+    margin: 2% 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #363958;
+    text-transform: capitalize;
+}
+
+.sub-section-text-area > ul {
+    list-style: none;
+    display: flex;
+    /* margin-bottom: 20px; */
+}
+
+.sub-section-text-area > ul > li {
+    padding-right: 5px;
+}
+
+.sub-section-text-area > ul > li > img {
+    width: 20px;
+}
+
+.rating {
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 375px) {
+    nav {
+        display: none;
+    }
+
+   
+    .nav-responsive {
+        display: block;
+    }
+
+    .nav-container > div {
+        height: 100%;
+    }
+
+    .nav-responsive > div > img {
+        width: 80%;
+    }
+
+    .first-section {
+        height: 500px;
+        flex-wrap: wrap;
+    }
+
+    
+    #bag {
+        font-size: 3.75em;
+        line-height: 70px;
+    }
+
+    #moon {
+        font-size: 3.75em;
+        line-height: 50px;
+    }
+
+    .first-section-text-area {
+        width: 100%;
+    }
+
+    .first-section-text-area > p {
+        font-size: 0.8em;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+
+    .first-section-image-area {
+        width: 100%;
+        margin-top: 20px;
+        position: relative;
+        left: 0;
+    }
+
+    /* second section */
+
+    .second-section {
+        display: block;
+        margin-top: 20%;
+    }
+
+    .sub-section-container {
+        width: 100%;
+    }
+
+    .sub-section-image-area {
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+    
+    .sub-section-image {
+        width: 100%;
+    }
+    
+    .sub-section-text-area > h2 {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    .sub-section-text-area > p {
+        font-size: 0.8em ;
+        margin-bottom: 10px;
+    }
+
+    /* Casula bagpack section */
+
+    .product-section-header {
+        font-size: 1.5em;
+    }
+
+    .product-container {
+        display: block;
+    }
+
+    .product-card {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    /* Review section */
+
+    .review-section-header {
+        font-size: 1.5em;
+    }
+
+    .review-section {
+        width: 80%;
+        margin: 2% 0;
+        padding: 0 10%;
+        display: block;
+    }
+
+    .review-sub-section-container {
+        width: 100%;
+    }
+
+    .review-header {
+        font-size: 0.8em;  
+    }
 }
