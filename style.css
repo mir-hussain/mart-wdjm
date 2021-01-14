@@ -49,6 +49,7 @@ nav {
 
 .nav-container > ul > li {
     padding: 0 20px;
+    cursor: pointer;
 }
 
 .logo-container {
