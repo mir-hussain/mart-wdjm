@@ -7,17 +7,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* .btn {
-    text-decoration: none;
-    color: white;
-    padding: 15px 30px;
-    background-color: #fa814d;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.8em;
-    border-radius: 10px;
-    text-transform: uppercase;
-} */
-
 button {
     display: flex;
     align-items: center;
@@ -294,7 +283,8 @@ nav {
 
 .review-section {
     width: 80%;
-    margin: 2% 0;
+    margin-top: 2%;
+    margin-bottom: 200px;
     padding: 0 10%;
     display: flex;
     justify-content: space-between;
@@ -332,17 +322,28 @@ nav {
     text-transform: capitalize;
 }
 
-.sub-section-text-area > ul {
+.review-sub-section-text-area {
+    width: 100%;
+    color: #3E3E3E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.review-text-area > ul {
     list-style: none;
     display: flex;
     /* margin-bottom: 20px; */
 }
 
-.sub-section-text-area > ul > li {
+.review-text-area > ul > li {
     padding-right: 5px;
 }
 
-.sub-section-text-area > ul > li > img {
+.review-text-area > ul > li > img {
     width: 20px;
 }
 
@@ -350,6 +351,18 @@ nav {
     margin-bottom: 20px;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer > p {
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    font-size: 1em;
+    
+}
 @media only screen and (max-width: 970px) {
     .card-footer > button {
         font-size: 0.6em;
